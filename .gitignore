@@ -1,0 +1,104 @@
+# =====================================================================
+#  2026 中国研究生数学建模竞赛 D26104870221 队 —— 公开代码仓库
+#  .gitignore
+#  说明：本仓库只收录"代码 + 结果"，不收录赛题原始数据、虚拟环境和
+#        大体量中间产物。若需复现，请自备赛题附件数据。
+# =====================================================================
+
+# ---------- Python 虚拟环境 / 依赖（体积大，用 requirements.txt 代替） ----------
+**/venv/
+**/.venv/
+**/env/
+**/*.whl
+**/site-packages/
+**/Lib/
+**/Scripts/
+**/pyvenv.cfg
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg
+.eggs/
+build/
+dist/
+
+# ---------- LaTeX 编译中间产物 ----------
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
+*.xdv
+*.idx
+*.ind
+*.ilg
+*.gls
+*.glg
+*.glo
+*.bak
+*.bak_*
+
+# ---------- 编辑器 / 系统 ----------
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+# Office 临时锁文件
+~$*
+*.tmp
+
+# ---------- 赛题原始数据与地理空间大文件（版权归竞赛组委会，不上传） ----------
+D题/数据/
+*.tif
+*.tiff
+*.mat
+*.docx
+*.pptx
+*.xlsx
+*.pdf
+
+# ---------- 大体量中间产物 / 调试目录 ----------
+# 临时探针与草稿目录（不源码，保留会显著增大仓库）
+_probe/
+_probe_*/
+_appendix_probe/
+_draft3_parse/
+_draft_figs/
+# 打包快照（与源码重复）
+src_zip/
+src_zip2/
+# 虚拟环境残留
+**/p2整理版/**/venv*/
+# 大体积缓存与二进制
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+*.pkl
+*.h5
+*.ckpt
+*.pt
+*.pth
+*.onnx
+
+# ---------- 结果文件：按需保留 ----------
+# 若希望公开结果表，请取消下面两行注释后手动 git add -f
+# *.csv
+# *结果提交*.xlsx
